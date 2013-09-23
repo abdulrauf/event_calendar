@@ -229,7 +229,7 @@ module EventCalendar
                 cal << %(height: #{options[:event_height] - options[:event_padding_top]}px;" )
                 if options[:use_javascript]
                   # custom attributes needed for javascript event highlighting
-                  cal << %(data-event-id="#{event.id}" data-event-class="#{class_name}" data-color="#{event.color}  rel='#{day}'" )
+                  cal << %(data-event-id="#{event.id}" data-event-class="#{class_name}" data-color="#{event.color}"  rel="#{day}" )
                 end
                 cal << %(>)
 
